@@ -69,5 +69,11 @@ resource "azapi_resource" "networkInterface" {
   }
 }
 
+resource "tls_private_key" "vm_ssh_pair_key" {
+  algorithm = "RSA"
+  rsa_bits  = 4096
+}
+
+
 
 
